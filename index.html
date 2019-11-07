@@ -28,9 +28,10 @@
             </div>
             <br><br><br><br><br><br>
             <h1>
-                <bold>WELCOME <br> to <br>Spoty Pizza Hub</bold>
+                <bold>KARIBU <br> <br>Artista Pizza Hub</bold>
                 <br><br>
             </h1>
+            <p>where</p><br>
             <p>AMAZING PEOPLE MAKE PIZZA AMAZING.</p><br>
             <div class="socials">
                 <a href=""><span class="fab fa-facebook icon_facebook"></span></a>
@@ -42,20 +43,32 @@
         </div>
         <br>
 
-        <div class="menu container">
+        <div class="menu-container">
             <h1 class="text-center" id="menu">Menu</h1>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="images/piz1.png" alt="small-pizza" class="wiggle">
-                    <caption class="text-white">Regular<br>Ksh. 300</caption>
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="resize" src="images/piz1.png" alt="small-pizza" class="wiggle">
+                            <caption class="text-white">Regular<br>Ksh. 500</caption>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/pizz2.jpg" alt="medium-pizza" class="wiggle">
-                    <caption class="text-white">Medium<br>Ksh. 600</caption>
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="resize" src="images/pizz2.jpg" alt="medium-pizza" class="wiggle">
+                            <caption class="text-white">Medium<br>Ksh. 750</caption>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/pizz3.jpg" alt="large-pizza" class="wiggle">
-                    <caption class="text-white">Large<br>Ksh. 1200</caption>
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="resize" src="images/pizz3.jpg" alt="large-pizza" class="wiggle">
+                            <caption class="text-white">Large<br>Ksh. 1000</caption>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,7 +101,7 @@
                             <option value="flatbread">FlatBread Crust </option>
                             <option value="custom">Custom Crust </option>
                         </select>
-                        <label>Select Your favourite Toppings</label>
+                        <label>Choose Your favourite Toppings</label>
                         <select class="custom-select custom-select-md mb-3" id="toppings" required>
                             <option value="mushroom">Mushroom </option>
                             <option value="onions">Onions </option>
@@ -104,9 +117,13 @@
                         <label for="number">Number of Pizza's</label>
                         <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
                             required>
-
-
                     </form>
+                    <br>
+                    <a href="#summary">
+                        <button type="submit" class="btn btn-success checkout" id="checkout">
+                            Checkout
+                        </button>
+                    </a>
                 </div>
             </div>
 </body>

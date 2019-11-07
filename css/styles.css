@@ -1,3 +1,5 @@
+@import url('bootstrap.css');
+
 body{
     font-family: 'Times roman';
   }
@@ -15,4 +17,16 @@ body{
     color: white;
     width: 100% 100%;
    
+  }
+  .resize {
+    width: 320px;
+    height: auto;
+  }
+  .resize {
+    width: 320px;
+    height: auto;
+  }
+  .resize {
+    width: 320px;
+    height: auto;
   }
