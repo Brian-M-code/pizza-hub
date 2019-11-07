@@ -67,13 +67,13 @@
                     <form class="col-sm-6 offset-sm-3 text-center">
                         <label>Pick your pizza Flavour:</label>
                         <select class="custom-select custom-select-md mb-3 flavour" required>
-                            <option value="vegtikka">Hawaiian</option>
-                            <option value="chickentikka">BBQ Steak</option>
+                            <option value="hawaiian">Hawaiian</option>
+                            <option value="bbq">BBQ Steak</option>
                             <option value="periperi">Peri-Peri Chicken</option>
-                            <option value="bbq">Chicken Tikka</option>
-                            <option value="hawaiian">Veg Tikka</option>
+                            <option value="chickentikka">Chicken Tikka</option>
+                            <option value="vegtikka">Veg Tikka</option>
                             <option value="mushroom">Chicken and Mushroom</option>
-                            
+
                         </select>
                         <label>Chose your preferred Size:</label>
                         <select class="custom-select custom-select-md mb-3" id="size" required>
@@ -88,6 +88,25 @@
                             <option value="flatbread">FlatBread Crust </option>
                             <option value="custom">Custom Crust </option>
                         </select>
+                        <label>Select Your favourite Toppings</label>
+                        <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                            <option value="mushroom">Mushroom </option>
+                            <option value="onions">Onions </option>
+                            <option value="tomato">Tomato</option>
+                            <option value="greenpepper">Green Pepper </option>
+                            <option value=""></option>
+                            <option value="olives">Olives </option>
+                            <option value="pineapple">Pineapple </option>
+                            <option value=""></option>
+                            <option value="beef">Beef Peperoni </option>
+                            <option value="chicken">Periperi Chicken </option>
+                        </select>
+                        <label for="number">Number of Pizza's</label>
+                        <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
+                            required>
+
+
+                    </form>
                 </div>
             </div>
 </body>
