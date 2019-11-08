@@ -48,7 +48,7 @@
                 <h1 class="text-center" id="menu">Menu</h1>
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="resize" src="images/piz1.png" alt="small-pizza" class="wiggle">
+                        <img class="resize" src="images/pizz3.jpg" alt="small-pizza" class="wiggle">
                         <br>
                         <caption class="text-white">Regular Pizza<br>Ksh. 500</caption>
                     </div>
@@ -58,7 +58,7 @@
                         <caption class="text-white">Medium Pizza<br>Ksh. 750</caption>
                     </div>
                     <div class="col-md-4">
-                        <img class="resize" src="images/pizz3.jpg" alt="large-pizza" class="wiggle">
+                        <img class="resize" src="images/piz1.png" alt="large-pizza" class="wiggle">
                         <br>
                         <caption class="text-white">Large Pizza<br>Ksh. 1000</caption>
                     </div>
@@ -121,13 +121,64 @@
                         <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
                             required>
                     </form>
+
+                    <br>
                     <a href="#summary">
                         <button type="submit" class="btn btn-success checkout" id="checkout">
                             Checkout
                         </button>
                     </a>
+
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+
+        <div classes="order-summary" id="sum-order">
+            <h1 class="text-center" id="summary">Order Summary </h1>
+            <h2 class="text-center summary">Your order:</h2>
+            <ol id="list" class="text-center sum">
+            </ol>
+            <div class="clientdata">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <form action="" class="form-group col-sm-6 data">
+                        <input type="text" class="form-control clientdata" placeholder="Enter your Name:">
+                        <input type="text" class="form-control clientdata" placeholder="Enter your phone number:">
+                        <input type="text" class="form-control clientdata" placeholder="Enter your location">
+                        <button class="text" class="btn bg-info"> Request Delivery</button> <br>
+                        <button class='delivernot'>Pick up</button>
+                    </form>
+                    <div class="col-sm-3"></div>
                 </div>
             </div>
+           
+        </div>
+        <div class="contacts">
+            <div class="contact-overlay">
+                <h1 class="text-center contact text-white">Contacts:</h1>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5 subs">
+                        <h1 class="text-white text-center"> Call Us </h1>
+                        <p class="text-center">+254 0001 432</p>
+                        <form>
+                            <div class="email-info">
+                                <div class="form-group fill-all-form">
+                                    <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
+                                           required="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-5">
+                        <h4 class="text-center get-pizza">We love feedback..send us a mail</h4>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+        </div>
+        
 </body>
 
 </html>
