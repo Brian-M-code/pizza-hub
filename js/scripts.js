@@ -79,7 +79,7 @@ $(document).ready(function () {
 
                     }
                     break;
-                    case flavour = "bbq":
+                case flavour = "bbq":
                     switch (size) {
                         case size = "small":
                             price = 500;
@@ -140,7 +140,7 @@ $(document).ready(function () {
 
                     }
                     break;
-                    case flavour = "peperoni":
+                case flavour = "peperoni":
                     switch (size) {
                         case size = "small":
                             price = 500;
@@ -201,7 +201,7 @@ $(document).ready(function () {
 
                     }
                     break;
-                    case flavour = "chickentikka":
+                case flavour = "chickentikka":
                     switch (size) {
                         case size = "small":
                             price = 500;
@@ -262,7 +262,7 @@ $(document).ready(function () {
 
                     }
                     break;
-                    case flavour = "vegtikka":
+                case flavour = "vegtikka":
                     switch (size) {
                         case size = "small":
                             price = 500;
@@ -295,7 +295,7 @@ $(document).ready(function () {
                                 totalPrice = (price * number) + 170;
                             }
                             else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
+                                totalPrice= (price * number) + 200;
                             }
                             else {
                                 totalPrice = (price * number);
@@ -314,7 +314,7 @@ $(document).ready(function () {
                                 totalPrice = (price * number) + 170;
                             }
                             else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
+                                totalPrice= (price * number) + 200;
                             }
                             else {
                                 totalPrice = (price * number);
@@ -323,7 +323,7 @@ $(document).ready(function () {
 
                     }
                     break;
-                    case flavour = "mushroom":
+                case flavour = "mushroom":
                     switch (size) {
                         case size = "small":
                             price = 500;
@@ -337,7 +337,7 @@ $(document).ready(function () {
                                 totalPrice = (price * number) + 170;
                             }
                             else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
+                                totalPrice= (price * number) + 200;
                             }
                             else {
                                 totalPrice = (price * number);
@@ -381,10 +381,12 @@ $(document).ready(function () {
                                 totalPrice = (price * number);
                             }
                             break;
-                        }
                     }
-                }
-            
-        
-    
+            }
+            let newOrder = order(flavour, size, crust, topping, drink, number, totalPrice);
+            alert(newOrder);
+        }
+
+
+
 
