@@ -384,7 +384,23 @@ $(document).ready(function () {
                     }
             }
             let newOrder = order(flavour, size, crust, topping, drink, number, totalPrice);
-            alert(newOrder);
+            alert(newOrder());
+
+            //order
+            $('.summary').slideDown(2000);
+            $('.clientdata')slideUp();
+            $('#list').slideDown();
+            $('.delivernot').show(1000);
+            
+            $('#list').text(" ");
+            $('#list').append("<br> +  "Flavour:   " + newOrder.f + "<br>" + "Size :   "
+            + newOrder.s + "<br>" + "Crust :     "
+            + newOrder.c + "<br>" + "Toppings :     "
+            + newOrder.t + "<br>" + " Drinks :    "
+            + newOrder.d + "<br>" + "Number of pizzas:   "
+            + newOrder.n + "<br>" + "Total Price :  "
+            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+    });
         }
 
 
