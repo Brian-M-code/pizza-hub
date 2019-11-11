@@ -18,8 +18,8 @@
         <div class="front-page">
 
             <div class="navbar" id="myTopnav">
-                <a href="#home" class="active">Spoty Pizza</a>
-                <a href="#ourmenu">Our Menu</a>
+                <a href="#home" class="active">A.P.Hub</a>
+                <a href="#menu">Our Menu</a>
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -33,13 +33,6 @@
             </h1>
             <p>where</p><br>
             <p>AMAZING PEOPLE MAKE PIZZA AMAZING.</p><br>
-            <div class="socials">
-                <a href=""><span class="fab fa-facebook icon_facebook"></span></a>
-                <a href=""><span class="fab fa-twitter icon_twitter"></span></a>
-                <a href=""><span class="fab fa-google-plus icon_googlep"></span></a>
-                <a href=""><span class="fab fa-linkedin icon_linkedin"></span></a>
-            </div>
-
         </div>
         <br>
 
@@ -50,133 +43,102 @@
                     <div class="col-md-4">
                         <img class="resize" src="images/pizz3.jpg" alt="small-pizza" class="wiggle">
                         <br>
-                        <caption class="text-white">Regular Pizza<br>Ksh. 500</caption>
+                        <caption class="text-white">Regular Pizza. </caption>
                     </div>
                     <div class="col-md-4">
                         <img class="resize" src="images/pizz2.jpg" alt="medium-pizza" class="wiggle">
                         <br>
-                        <caption class="text-white">Medium Pizza<br>Ksh. 750</caption>
+                        <caption class="text-white">Medium Pizza. </caption>
                     </div>
                     <div class="col-md-4">
                         <img class="resize" src="images/piz1.png" alt="large-pizza" class="wiggle">
                         <br>
-                        <caption class="text-white">Large Pizza<br>Ksh. 1000</caption>
+                        <caption class="text-white">Large Pizza. </caption>
                     </div>
                 </div>
             </div>
         </div>
         <div class="orders" id="order">
-            <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-            <div class="form-group row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 order-overlay text-center">
-                    <form class="col-sm-6 offset-sm-3 text-center">
-                        <label>Pick your pizza Flavour:</label>
-                        <select class="custom-select custom-select-md mb-3" id="flavour" required>
-                            <option value="hawaiian">Hawaiian</option>
-                            <option value="bbq">BBQ Steak</option>
-                            <option value="peperoni">Peperoni Chicken</option>
-                            <option value="chickentikka">Chicken Tikka</option>
-                            <option value="vegtikka">Veg Tikka</option>
-                            <option value="mushroom">Chicken and Mushroom</option>
+            <form>
+                <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8 order-overlay text-center">
+                        <form class="col-sm-6 offset-sm-3 text-center">
+                            <label>Pick your pizza Flavour:</label>
+                            <select class="custom-select custom-select-md mb-3" id="flavour" required>
+                                <option value="hawaiian">Hawaiian</option>
+                                <option value="bbq">BBQ Steak</option>
+                                <option value="peperoni">Peperoni Chicken</option>
+                                <option value="chickentikka">Chicken Tikka</option>
+                                <option value="vegtikka">Veg Tikka</option>
+                                <option value="mushroom">Chicken and Mushroom</option>
 
-                        </select>
-                        <label>Chose your preferred Size:</label>
-                        <select class="custom-select custom-select-md mb-3" id="size" required>
-                            <option value="small">Small @500 Kshs</option>
-                            <option value="medium">Medium @750 Kshs</option>
-                            <option value="large">Large @1000 Kshs</option>
-                        </select>
-                        <label for="crust">Choose your favorite Crust:</label>
-                        <select class="custom-select custom-select-md mb-3" id="crust" required>
-                            <option value="crispy">Crispy </option>
-                            <option value="stuffed">Stuffed </option>
-                            <option value="flatbread">FlatBread Crust </option>
-                            <option value="gluten">Gluten-free</option>
-                        </select>
+                            </select>
+                            <label>Chose your preferred Size:</label>
+                            <select class="custom-select custom-select-md mb-3" id="size" required>
+                                <option value="small">Small @500 Kshs</option>
+                                <option value="medium">Medium @750 Kshs</option>
+                                <option value="large">Large @1000 Kshs</option>
+                            </select>
+                            <label for="crust">Choose your favorite Crust:</label>
+                            <select class="custom-select custom-select-md mb-3" id="crust" required>
+                                <option value="crispy">Crispy @10 kshs </option>
+                                <option value="stuffed">Stuffed @20 Kshs </option>
+                                <option value="flatbread">FlatBread Crust @30 Kshs </option>
+                                <option value="gluten">Gluten-free @45 Kshs</option>
+                            </select>
 
-                        <label>Choose Your favourite Toppings</label>
-                        <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                            <option value="mushroom">Mushroom </option>
-                            <option value="onions">Onions </option>
-                            <option value="tomato">Tomato</option>
-                            <option value="greenpepper">Green Pepper </option>
-                            <option value="olives">Olives </option>
-                            <option value="pineapple">Pineapple </option>
-                            <option value="beef">Beef Peperoni </option>
-                            <option value="chicken">Periperi Chicken </option>
-                        </select>
+                            <label>Choose Your favourite Toppings</label>
+                            <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                                <option value="mushroom">Mushroom @30 Kshs </option>
+                                <option value="onions">Onions @5 Kshs</option>
+                                <option value="tomato">Tomato @10 Kshs</option>
+                                <option value="greenpepper">Green Pepper @15 Kshs</option>
+                                <option value="olives">Olives @20 Kshs</option>
+                                <option value="pineapple">Pineapple @35 Kshs </option>
+                                <option value="beef">Beef Peperoni @45 Kshs</option>
+                                <option value="chicken">Periperi Chicken @45 Kshs</option>
+                            </select>
 
-                        <label>What about a drink ?</label>
-                        <select class="custom-select custom-select-md mb-3" id="drink" required>
-                            <option value="coke">Cocacola 2 litres @ 170 Kshs.</option>
-                            <option value="orange">Fanta orange 2 litres @170 Kshs. </option>
-                            <option value="pineapple">Fanta pineapple 2 litres @170 Kshs</option>
-                            <option value="monster">Monster Energy Drink @200 Kshs </option>
-                        </select>
-
-                        <label for="number">Number of Pizza's</label>
-                        <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
-                            required>
-                    </form>
-
-                    <br>
-                    <a href="#summary">
-                        <button type="submit" class="btn btn-success checkout" id="checkout">
-                            Checkout
-                        </button>
-                    </a>
-
-                </div>
-                <div class="col-sm-2"></div>
-            </div>
-        </div>
-
-        <div classes="order-summary" id="sum-order">
-            <h1 class="text-center" id="summary">Order Summary </h1>
-            <h2 class="text-center summary">Your order:</h2>
-            <ol id="list" class="text-center sum">
-            </ol>
-            <div class="clientdata">
-                <div class="row">
-                    <div class="col-sm-3"></div>
-                    <form action="" class="form-group col-sm-6 data">
-                        <input type="text" class="form-control clientdata" placeholder="Enter your Name:" required>
-                        <input type="text" class="form-control clientdata" placeholder="Enter your phone number:" required>
-                        <input type="text" class="form-control clientdata" placeholder="Enter your location" required>
-                        <button class="text" class="btn bg-info"> Request Delivery</button> <br>
-                        <button class='delivernot'>Pick up</button>
-                    </form>
-                    <div class="col-sm-3"></div>
-                </div>
-            </div>
-           
-        </div>
-        <div class="contacts">
-            <div class="contact-overlay">
-                <h1 class="text-center contact text-white">Contacts:</h1>
-                <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5 subs">
-                        <h1 class="text-white text-center"> Call Us </h1>
-                        <p class="text-center">+254 0001 432</p>
-                        <form>
-                            <div class="email-info">
-                                <div class="form-group fill-all-form">
-                                    <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
-                                           required="">
-                                </div>
-                            </div>
+                            <label for="number">Number of Pizza's</label>
+                            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
+                                required>
                         </form>
+
+                        <br>
+                        <a href="#summary">
+                            <button type="submit" class="btn btn-success checkout" id="checkout">
+                                Checkout
+                            </button>
+                        </a>
+
                     </div>
-                    <div class="col-sm-5">
-                        <h4 class="text-center get-pizza">We love feedback..send us a mail</h4>
-                    </div>
-                    <div class="col-sm-1"></div>
-                </div>
+            </form>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <div classes="order-summary" id="sum-order">
+        <h1 class="text-center" id="summary">Order Summary </h1>
+        <h2 class="text-center summary">Your order:</h2>
+        <ol id="list" class="text-center sum">
+        </ol>
+        <div class="clientdata">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <form action="" class="form-group col-sm-6 data">
+                    <input type="text" class="form-control clientdata" placeholder="Enter your Name:" required>
+                    <input type="text" class="form-control clientdata" placeholder="Enter your phone number:" required>
+                    <input type="text" class="form-control clientdata" placeholder="Enter your location" required>
+                    <button class="text" class="btn bg-info" id="go"> Request Delivery</button> <br>
+                    <button class='delivernot' id="do">Pick up</button>
             </div>
         </div>
-        
+
+    </div>
+
+    </div>
 </body>
 
 </html>

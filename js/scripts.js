@@ -1,408 +1,115 @@
 $(document).ready(function () {
-    $(function () {
-        $('.summary').hide();
-        $('.clientdata').hide();
-
-        // input from order form
-        $("#checkout").click(function () {
-            let flavour = $("#flavour option:selected").val();
-            let size = $("#size option:selected").val();
-            let crust = $("#crust option: selected").val();
-            let toppings = $("#toppings option:selected").val();
-            let drink = $("#drink option:selected").val();
-            let number = $("#number option:selected").val();
-
-            let order = (f, s, c, t, d, n, total) => {
-                return { f, s, c, t, d, n, total };
-            };
-
-            let price, totalPrice;
-            switch (flavour) {
-                case flavour = "hawaiian":
-                    switch (size) {
-                        case size = "small":
-                            price = 500;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "medium":
-                            price = 750;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "large":
-                            price = 1000;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                    }
-                    break;
-                case flavour = "bbq":
-                    switch (size) {
-                        case size = "small":
-                            price = 500;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "medium":
-                            price = 750;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "large":
-                            price = 1000;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                    }
-                    break;
-                case flavour = "peperoni":
-                    switch (size) {
-                        case size = "small":
-                            price = 500;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "medium":
-                            price = 750;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "large":
-                            price = 1000;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                    }
-                    break;
-                case flavour = "chickentikka":
-                    switch (size) {
-                        case size = "small":
-                            price = 500;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "medium":
-                            price = 750;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "large":
-                            price = 1000;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                    }
-                    break;
-                case flavour = "vegtikka":
-                    switch (size) {
-                        case size = "small":
-                            price = 500;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "medium":
-                            price = 750;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice= (price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "large":
-                            price = 1000;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice= (price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                    }
-                    break;
-                case flavour = "mushroom":
-                    switch (size) {
-                        case size = "small":
-                            price = 500;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice= (price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "medium":
-                            price = 750;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-
-                        case size = "large":
-                            price = 1000;
-                            if (drink === "coke") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "orange") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "pineapple") {
-                                totalPrice = (price * number) + 170;
-                            }
-                            else if (drink === "monster") {
-                                totalPrice(price * number) + 200;
-                            }
-                            else {
-                                totalPrice = (price * number);
-                            }
-                            break;
-                    }
-            }
-            let newOrder = order(flavour, size, crust, topping, drink, number, totalPrice);
-            alert(newOrder());
-
-            //order
-            $('.summary').slideDown(2000);
-            $('.clientdata')slideUp();
-            $('#list').slideDown();
-            $('.delivernot').show(1000);
-            
-            $('#list').text(" ");
-            $('#list').append("<br> +  "Flavour:   " + newOrder.f + "<br>" + "Size :   "
-            + newOrder.s + "<br>" + "Crust :     "
-            + newOrder.c + "<br>" + "Toppings :     "
-            + newOrder.t + "<br>" + " Drinks :    "
-            + newOrder.d + "<br>" + "Number of pizzas:   "
-            + newOrder.n + "<br>" + "Total Price :  "
-            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
-    });
+    ​
+        var toppingsPrices = {mushroom:30, onions:5, tomato:10,greenpepper:15, olives: 20};
+        var crustPrices = {crispy: 10, stuffed: 20, flatbread:30, glutten:45};
+        
+    ​
+        $.each(toppingsPrices,function(k,v){
+            var option = '<option value="'+k+'">'+k+' @ '+v+' Ksh</option>';
+            $("#select-toppings").append(option);
+        });
+    ​
+        $.each(crustPrices,function(k,v){
+            var option = '<option value="'+k+'">'+k+'</option>';
+            $("#select-crust").append(option);
+        });
+    ​
+    ​
+    ​
+    function Pizza(size, crust, toppings){
+        this.flavour= flavour;
+        this.size = size;
+        this.crust = crust;
+        this.toppings = toppings;
+    }
+     
+    ​
+    Pizza.prototype.SizePrice = function(){
+    ​
+        if(this.size==="large"){
+            return 1000;
+        }else if(this.size=="medium"){
+            return 750;
+        }else{
+            return 500;
         }
-
-
-
-
+    }
+    ​
+    ​
+    Pizza.prototype.ToppingsPrice = function(){
+        if(this.size=="large"){
+            return toppingsPrices[this.toppings]*3;
+        }else if(this.size=="medium"){
+            return toppingsPrices[this.toppings]*2;
+        }else{
+            return toppingsPrices[this.toppings];
+        }
+    }
+    ​
+    ​
+    ​
+    Pizza.prototype.CrustPrice = function(){
+        if(this.crust=="crispy"){
+            return 10;
+        }else if(this.crust=="stuffed"){
+            return 20;
+        }else{
+            return 30;
+        }
+    }
+    ​
+    ​
+    var pizza1 = new Pizza("large", "crispy", "onion");
+    ​
+    console.log(pizza1.size + " "+pizza1.SizePrice() + "brian "+ pizza1.ToppingsPrice() + pizza1.CrustPrice());
+    ​
+    // business logic​
+    ​
+    $("#checkout").click(function(e){
+        e.preventDefault();
+        var flavour = $("select[name='flavour']");
+        var size = $("select[name='size']").val();
+        var crust = $("select[name='crust']").val();
+        var toppings = $("select[name='toppings']").val();
+        var number = $("input[name='number']").val();
+    ​
+        var pizza = new Pizza(flavour,size, crust, toppings);
+    ​
+        var sizePrice = pizza.SizePrice();
+        var crustPrice = pizza.CrustPrice();
+        var toppingPrice = pizza.ToppingsPrice();
+        var total = (sizePrice + crustPrice + toppingPrice ) * number;
+    ​
+        var orderSummary = "<li>"+flavour+" "+size+" "+number+" "+crust+" with "+toppings + " toppings <br> Total Ksh ."+total+"</li>";
+    ​
+        $("#list").append(orderSummary);
+    ​
+    })
+    ​
+    });
+    $("#clientdata").submit(function (event) {
+        event.preventDefault();
+        var blanks = ["name", "phone_number", "location"];
+        var input = [];
+        blanks.forEach(function (blank) {
+            input.push($("#" + blank).val());
+        });
+        alert("Your order will be delivered at "+ input[2] +"");
+        $("#go")[2].reset();
+    });
+    ​
+    $("#do").click(function (event) {
+        event.preventDefault();
+        var blanks = ["name", "phone_number", "location"];
+        var input = [];
+        blanks.forEach(function (blank) {
+            input.push($("#" + blank).val());
+        });
+        alert("Welcome to Artista Pizza Hub Garden-City Mall");
+        $("#do").reset();
+    });
+    Collapse
+    
+    
+    
+    

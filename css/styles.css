@@ -10,6 +10,10 @@ body{
   .navbar {
     overflow: hidden;
   }
+  .active{
+    font-display: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
   .front-page{
     background: url(../images/pizza1.webp) no-repeat;
     background-size: 100% 100%;
