@@ -1,150 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- <link rel="shortcut icon" href="./images/logo1.png"> -->
-    <title>Artista Pizza Hub</title>
+  <!-- <link rel="shortcut icon" href="./images/logo1.png"> -->
+  <title>Artista Pizza Hub</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="./js/jquery-3.4.1.js"></script>
 
-  
+
   <link rel="stylesheet" href="./css/bootstrap.css">
   <script src="./js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./css/styles.css" type="text/css">
   <style>
-
-  body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:258vh;
-    background-image:url("../images/tripplepizza.jpeg");
-  }
+    body {
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 258vh;
+      background-image: url("../images/tripplepizza.jpeg");
+    }
   </style>
- 
-  
-  
+
+
+
 </head>
+
 <body>
-  <div class="container">
-  <!-- nav-bar with bootstrap -->
-  <!-- positioning the nav-bar with sticky position -->
-  <nav class="navbar navbar-expand-md sticky-top">
-
-    
-    <div class="collapse navbar-collapse" id="collapse_target">
-    <!-- adding  logo -->
-
-    <!-- <a class="navbar-brand"><img src="./images/logo1.png" alt="" width="120" height="70"></a> -->
-    
-    <ul class="navbar-nav">
-      <li class="nav item">
-        <a class="nav-link" href="./index.html">Home</a>
-
-      </li>
-      <li class="nav item dropdown">
-          <a class="nav-link" href="menu.html">Menu</a>
   
-        </li>
-        <li class="nav item">
-            <a class="nav-link" href="./contacts.html">Contacts</a>
-    
+    <!-- nav-bar with bootstrap -->
+    <!-- positioning the nav-bar with sticky position -->
+    <nav class="navbar navbar-expand-md sticky-top">
+
+
+      <div class="collapse navbar-collapse" id="collapse_target">
+        <!-- adding  logo -->
+
+        <!-- <a class="navbar-brand"><img src="./images/logo1.png" alt="" width="120" height="70"></a> -->
+
+        <ul class="navbar-nav">
+          <li class="nav item">
+            <a class="nav-link" href="./index.html">Home</a>
+
           </li>
-          
-    </ul>
-  </div>
-  </nav>
-  
-  
-  <div class="menu">
-    <h2 id="prime">OUR MENU</h2>
-    <p id="zuri"><em>For the greatest experience at our palace <br> we provide the listed unique pizzas with delicious toppings and extra customer preference that comes with bonuses from drinks to gift coupons.</em></p>
-    <div class="row">
-      <div class=" col-md-4">
-        <img src="./images/Lahm.jpg" width="250" alt="">
-        <p id="cool"><em>Lahm pizza</em></p>
+          <li class="nav item dropdown">
+            <a class="nav-link" href="menu.html">Menu</a>
+
+          </li>
+          <li class="nav item">
+            <a class="nav-link" href="./contacts.html">Contacts</a>
+
+          </li>
+
+        </ul>
       </div>
-      <div class="col-md-4">
+    </nav>
+
+<div class="container">
+    <div class="menu">
+      <h2 id="prime">OUR MENU</h2>
+      <p id="zuri"><em>For the greatest experience at our palace <br> we provide the listed unique pizzas with delicious
+          toppings and extra customer preference that comes with bonuses from drinks to gift coupons.</em></p>
+      <div class="row">
+        <div class=" col-md-4">
+          <img src="./images/Lahm.jpg" width="250" alt="">
+          <p id="cool"><em>Lahm pizza</em></p>
+        </div>
+        <div class="col-md-4">
           <img src="./images/marghrita.jpg" width="250" alt="">
           <p id="roy"><em>margharita pizza</em></p>
         </div>
         <div class="col-md-4">
-            <img src="./images/marinara.jpg" width="250" alt="">
-            <p id="glass"><em>marinara pizza</em></p>
-          </div>
-    </div>
-    
-      <div class=" second">
-
-          <div id="form"  class="col-md-6">
-              <label><strong>choose the size of the pizza</strong><br>
-                          <select id="size">
-                              <option value="0">Open this to select the size</option>
-                              <option value="1000">small</option>
-                              <option value="1500">medium</option>
-                              <option value="2000">large</option>
-                          </select>
-                      </label><br><br>
-  
-              <label><strong>Choose the crust of your pizza</strong><br>
-                          <select id="crust">
-                              <option>Open this to select the crust
-                              </option>
-                              <option value="1000">Crispy</option>
-                              <option value="1500">Stuffed</option>
-                              <option value="1200">Gluten Free</option>
-                          </select>
-                      </label><br><br>
-              <div id="topping">
-                  <label><strong>Choose your topings</strong><br>
-                              <input type="checkbox" id="small" name="scales"
-                                  value="300" checked>
-                              <label>pepperoni</label><br>
-                  <input type="checkbox" id="small" name="scales" value="450" checked>
-                  <label>Mushrooms</label><br>
-                  <input type="checkbox" id="small" name="scales" value="500" checked>
-                  <label>Onions</label><br>
-                  <input type="checkbox" id="small" name="scales" value="540" checked>
-                  <label>sausage</label>
-              </div>
-  
-  
-              </label><br><br>
-              <input id="submit" type="submit" value="CHECKOUT">
-  
-  
-          </div>
-  
-  
-  
-          
-          <h2>you ordered the following:</h2>
-          <ul id="placeorderlist">
-  
-          </ul>
-          <p id="bill">The total is ksh:</p>
-          <p id="total"></p>
-
-         
+          <img src="./images/marinara.jpg" width="250" alt="">
+          <p id="glass"><em>marinara pizza</em></p>
+        </div>
       </div>
 
-     
-     
-</div>
-<div id="delivery">
-  <div id="gari">
-      <img id="img" src="./icons/24px (2).svg" height="80">
+      <div class=" second">
 
+        <div id="form" class="col-md-6">
+          <label><strong>choose the size of the pizza</strong><br>
+            <select id="size">
+              <option value="0">Open this to select the size</option>
+              <option value="1000">small</option>
+              <option value="1500">medium</option>
+              <option value="2000">large</option>
+            </select>
+          </label><br><br>
+
+          <label><strong>Choose the crust of your pizza</strong><br>
+            <select id="crust">
+              <option>Open this to select the crust
+              </option>
+              <option value="1000">Crispy</option>
+              <option value="1500">Stuffed</option>
+              <option value="1200">Gluten Free</option>
+            </select>
+          </label><br><br>
+          <div id="topping">
+            <label><strong>Choose your topings</strong><br>
+              <input type="checkbox" id="small" name="scales" value="300" checked>
+              <label>pepperoni</label><br>
+              <input type="checkbox" id="small" name="scales" value="450" checked>
+              <label>Mushrooms</label><br>
+              <input type="checkbox" id="small" name="scales" value="500" checked>
+              <label>Onions</label><br>
+              <input type="checkbox" id="small" name="scales" value="540" checked>
+              <label>sausage</label>
+          </div>
+
+
+          </label><br><br>
+          <input id="submit" type="submit" value="CHECKOUT">
+
+
+        </div>
+
+
+
+
+        <h2>you ordered the following:</h2>
+        <ul id="placeorderlist">
+
+        </ul>
+        <p id="bill">The total is ksh:</p>
+        <p id="total"></p>
+
+
+      </div>
+
+
+
+    </div>
+    
+    <div id="delivery">
+      <div id="gari">
+        <img id="img" src="./icons/24px (2).svg" height="80">
+
+      </div>
+
+
+      <strong>
+        <p>Kindly click on the truck icon for delivery</p>
+      </strong>
+    </div>
   </div>
 
-    
-    <strong>
-                <p>Kindly click on the truck icon for delivery</p>
-            </strong>
-</div>
-</div>
 
-
-<script src="./js/scripts.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
+
 </html>
