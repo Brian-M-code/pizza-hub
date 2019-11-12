@@ -1,67 +1,208 @@
-html {
-  scroll-behavior: smooth;
-}
-
-.home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/pizza1.webp);
-  color: white;
-  background-size: cover;
-  width: 100%;
-  height: 750px;
-  background-repeat: no-repeat;
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+body{
   text-align: center;
-  background-attachment: fixed;
 }
 
-.home h1 {
-  color: indigo;
-  font-size: 45px;
-  font-weight: bolder;
-  background-color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.about{
+  text-align: center;
+  color:white;
+  margin:1%;
+  font-family:italics;
+  font-size:34px;
+  margin-left: 10%;
+  
 }
-#mhome{
-  padding-top: 20%;
-  padding-left: 20px;
+#kwanza{
+  color:red;
+  text-align: center;
+  margin-top:5%;
+  font-family:'acme';
+  margin-left: 10%;
+  
+  
 }
-#welcome h3{
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+#cool{
+  font-family:'acme';
+  color: red;
+  font-size:49px;
+  
+}
+#cool :hover{
+  color:yellow;
+}
+#roy{
+  font-family:'acme';
+  color: red;
+  font-size:49px;
+}
+#roy :hover{
+  color:yellow;
+}
+#glass{
+  font-family:'acme';
+  color: red;
+  font-size:49px;
+}
+#glass :hover{
+  color:yellow;
+}
+#submit{
+  color:black;
+  opacity: 100;
+}
+#submit:hover{
+  color: green;
+}
+#prime{
+  margin-top: 12%;
+}
+img{
+  border-radius: 20px
+}
+.row{
+  padding-top: 3%;
+  margin-left:2%;
+  padding:3%;
+  margin-top: 6%;
+  font-size:26px;
+}
+.row, img :hover{
+opacity:0.9;
+cursor: pointer;
+}
+.menu{
+  text-align: center;
+  justify-content:space-around;
+  margin-top: 15%;
+  color: white;
+
+}
+.karibu{
+  margin-top:17%;
+}
+.second{
+  background-color:black;
+  margin-left: 33%;
+  margin-top: 10%;
+  font-family: italics;
+  opacity:0.7;
+  font-size: 18px;
+  padding: 70px 30px;
+  text-align: center; 
+  width: 33%;
+  
+}
+#bill{
+  font-size: 28px;
+}
+#zuri{
+  font-size: 20px;
+}
+h1{
+  font-family:'acme';
+  color: red;
+  text-align: center;
+  margin-top:11%;
+  margin-left: 13%;
+  opacity: 0.8
+}
+h2{
+  font-family:'acme';
+  color: red;
+}
+#delivery{
+  text-align: center;
+  margin-left:0%;
+  color: black;
+  font-size: 23px;
+}
+#gari{
+  /* animation: heartbeat 4s infinite; */
+  animation: mymove 5s infinite;
+  padding: 4%;
+}
+@keyframes mymove {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-55px);
+  }
+  60% {
+    transform: translateY(-45px);
+  }
+  
+}
+nav ul {
+  padding: 34px;
+  margin: 4px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-decoration: none;
+  padding: 20px 0;
+  color: white;
+  transition: 1s;
+  font-size: 28px;
+}
+
+nav a:hover {
+  color:green;
+}
+nav.shrink{
+  background-color: rgba(0,0,0,0.5);
+  height: 60px;
+  padding-top:0px;
+}
+.contact {
+  text-align: center;
+  margin-top: 5%;
   color: white;
 }
-.container-fluid h1{
-  color:indigo;
-  font-size:38px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.container-fluid{
-  text-align:center;
-  background-color: transparent;
-}
-#we p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-right: 20px;
+.text{
   padding:30px;
-  font-size: 30px;
 }
-.pizza-heading {
-  display: none;
-  background-color: white;
-  opacity: 0.8;
-  z-index: 1;
-  font-size: 30px;
-  height: 100%;
-  width: 100%;
-  padding-top: 30%;
-  padding-right: 15%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.form-inline {
+  padding-left: 30%;
+  margin-top:-11%
 }
-button#placeOrder{
+nav{
+  margin-left: 2%;
+}
+#buzz{
+  text-align: center;
 
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+}
+.img{
+  margin-top: 20%;
+}
+.card-body{
+  padding: 3px;
+  margin: 3px;
+  margin-top:13%;
+  
+}
+.icon{
+  text-align: center;
+}
+.kuyt{
+  margin: 6%;
+  text-align: center;
+  color:white;
+  font-family:am;
+  animation: mymove 5s infinite;
+  padding: 4%;
+  margin-top:1%;
+}
+
+.icon{
+  margin-top: 65px;
+  margin-left:2%;
 }

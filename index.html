@@ -1,198 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
-  <title>Artista PIZZA HUB</title>
+    <link rel="shortcut icon" href="./images/logo1.png">
+
+    <title>kaiser-pizza</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/jquery-3.4.1.js"></script>
+
+  
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  <style>
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.38),rgba(0,0,0,0)),url('./images/hotpizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:140vh;
+    width: 190vh;
+    object-fit: cover;
+  }
+  </style>
+ 
+  
+  
 </head>
-
 <body>
-  <!-- Ordering -->
-  <div class="modal fade" id="orderPizza" tabindex="-1" role="dialog" aria-labelledby="orderPizzaTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="orderPizzaTitle">Place your Order</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <h1 class="text-info"></h1>
-            <form id="orders">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="pizzaSize">Select Size</label>
-                    <select class="size form-control" id="pizzaSize">
-                      <option label="Large  -2000" value=2000></option>
-                      <option label="Medium - 1500" value=1500></option>
-                      <option label="Small- 800" value=800></option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="pizzaCrust">Select Crust</label>
-                    <select class="crust form-control" id="pizzaCrust">
-                      <option label="Chicago -700" value="700"></option>
-                      <option label="Neopoletan -650" value="650"></option>
-                      <option label="Deep-fish- 450" value="450"></option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <label for="pizzaTopping">Select Toppings @shs 80</label><br>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" name="topping" value=0>
-                <label class="form-check-label" for="topping">Pepperoni</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" name="topping" value=1>
-                <label class="form-check-label" for="topping">Onions</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" name="topping" value=2>
-                <label class="form-check-label" for="topping">Sausage</label>
-                <button type="submit" class="btn btn-outline-info" id="carty">Add to Cart</button>
-              </div>
+  <!-- nav-bar with bootstrap -->
+  <!-- positioning the nav-bar with sticky position -->
+  <nav class="navbar navbar-expand-md sticky-top">
 
+    
+    <div class="collapse navbar-collapse" id="collapse_target">
+    <!-- adding logo -->
 
-            </form>
-            <div>
+    <a class="navbar-brand"><img src="./images/logo1.png" alt="" width="120" height="70"></a>
+    <ul class="navbar-nav">
+      <li class="nav item">
+        <a class="nav-link" href="#home">Home</a>
 
-              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#cartPizza"
-                id="viewCart">View
-                Cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </li>
+      <li class="nav item dropdown">
+          <a class="nav-link" href="./menu.html">Menu</a>
+  
+        </li>
+        <li class="nav item">
+            <a class="nav-link" href="./contacts.html">Contacts</a>
+    
+          </li>
+          
+    </ul>
   </div>
-
-  <!-- Cart -->
-  <div class="modal fade" id="cartPizza" tabindex="-1" role="dialog" aria-labelledby="cartTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="cartTitle">Your Orders</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!-- location confirmation -->
-          <form action="">
-            <p>Should we deliver your orders right to your door step?</p>
-            <div class="form-inline">
-              <input type="radio" value="yes">Yes please
-              <input type="radio" value="no">No, I got this
-            </div>
-            <input type="text" id="location" class="form-control" placeholder="Enter delivery location">
-          </form>
-
-          <!-- table of orders -->
-          <div id="table">
-            <table style="width:100%" class="pt-5">
-
-              <tr>
-                <th>Size</th>
-                <th>Crust</th>
-                <th>Toppings</th>
-                <th>Total</th>
-
-              </tr>
-            </table>
-          </div>
+  </nav>
+  <h1><strong><em>WELCOME TO <br><br> KAISER PIZZA PALACE</em></strong></h1>
+  <div id="kwanza"><h2>ABOUT US</h2></div>
+  
+  <div class="about">
+      
+      <p>We are a dedicated food restaurant and company that is focused on providing and creating scrumptious dishes that ranges from our very own pizzas to other cuisines provided in the menu for our customers. <br>
+      Our foods are verified and tested by health practitioners to ensure that we provide the best for our dearly customers</p>
+      
+      
+</div>
 
 
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-outline-info" data-dismiss="modal" id="addMore">Order More</button>
-          <button type="button" class="btn btn-outline-primary" id="checkout">Checkout</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- home -->
-  <div class="container-fluid">
-    <div class="home">
-      <div class="row" id="mhome">
-        <div class="col-md-6">
-          <h1>Artista PIZZA HUB</h1>
-          <h3 id="welcome" class="p-3">
-            Want some artistic delicious Pizza? Then, Artista Pizza hub got you covered!
-          </h3>
-          <button id="placeOrder" class="btn btn-outline-info" data-toggle="modal" data-target="#orderPizza">Place your
-            order
-            now!</button>
-        </div>
-      </div>
-    </div>
-    <!-- about us -->
-    <div id="we" class="pt-5">
-      <h1 class="text-info">About us</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="images/piz1.png" class="img-fluid">
-        </div>
-        <div class="col-md-8">
-          <p class="text-justify">We are a team that is dedicated to excellence in terms of quality of our Pizzas.<br>
-            We value our customers
-            and we are always there to ensure that we give our best and maintain a good reputation to the outside world.
-            After just one bite, you’ll surely love our products.</p>
-        </div>
-      </div>
-    </div>
-    <!-- menu -->
-    <div class="container-fluid">
-      <h1 class="text-info">A Taste of delicacies</h1>
-      <div class="row pt-4">
-        <div class="col-md-3">
-          <div class="card text-center" id="pizza1">
-            <img src="images/pizza03.jpg" class="image-fluid">
-            <h2 class="pizza-heading text-center" id="pizza1-title">STROMBOLI</h2>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center" id="pizza2">
-            <img src="images/pizza04.jpg" class="image-fluid">
-            <h2 class="pizza-heading text-center" id="pizza2-title">NAPOLETANA</h2>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center" id="pizza3">
-            <img src="images/pizza07.jpg" class="image-fluid">
-            <h2 class="pizza-heading text-center" id="pizza3-title">MARINARA</h2>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center" id="pizza4">
-            <img src="images/pizza09.jpg" class="image-fluid">
-            <h2 class="pizza-heading text-center" id="pizza4-title">ITALIANA</h2>
-          </div>
-        </div>
-        <!-- footer -->
-        <div class="container-fluid pt-5 pl-0 pr-0">
-          <footer class="bg-primary p-4 text-white">
-            <h2>Contact us</h2>
-            <h3>Email</h3>
-            <p>artistapizzahub2019@gmail.com</p>
-            
-          </footer>
-        </div>
-      </div>
-      <script src="js/jquery-3.4.1.js"></script>
-      <script src="./js/script.js"></script>
-      <script src="js/bootstrap.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
-
 </html>
