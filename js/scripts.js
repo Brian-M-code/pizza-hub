@@ -57,7 +57,7 @@ $("#submit").click(function() {
 
 $('#img').click(function() {
 
-  alert("the delivery cost is ksh 1200");
+  alert("the delivery cost is ksh 150");
   var a = prompt("enter ur location");
   alert("your order will be delivered to" + " " + a);
 });
