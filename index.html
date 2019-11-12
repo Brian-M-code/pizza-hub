@@ -2,139 +2,198 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pizza Hub.</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
+  <title>Artista PIZZA HUB</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-
-        <div class="front-page">
-
-            <div class="navbar" id="myTopnav">
-                <a href="#home" class="active">A.P.Hub</a>
-                <a href="#menu">Our Menu</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <br><br><br><br><br><br>
-            <h1>
-                <bold>KARIBU <br> <br>Artista Pizza Hub</bold>
-                <br><br>
-            </h1>
-            <p>where</p><br>
-            <p>AMAZING PEOPLE MAKE PIZZA AMAZING.</p><br>
+  <!-- Ordering -->
+  <div class="modal fade" id="orderPizza" tabindex="-1" role="dialog" aria-labelledby="orderPizzaTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderPizzaTitle">Place your Order</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <br>
-
-        <div class="container col-md-12">
-            <div class="menu">
-                <h1 class="text-center" id="menu">Menu</h1>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="resize" src="images/pizz3.jpg" alt="small-pizza" class="wiggle">
-                        <br>
-                        <caption class="text-white">Regular Pizza. </caption>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="resize" src="images/pizz2.jpg" alt="medium-pizza" class="wiggle">
-                        <br>
-                        <caption class="text-white">Medium Pizza. </caption>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="resize" src="images/piz1.png" alt="large-pizza" class="wiggle">
-                        <br>
-                        <caption class="text-white">Large Pizza. </caption>
-                    </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <h1 class="text-info"></h1>
+            <form id="orders">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="pizzaSize">Select Size</label>
+                    <select class="size form-control" id="pizzaSize">
+                      <option label="Large  -2000" value=2000></option>
+                      <option label="Medium - 1500" value=1500></option>
+                      <option label="Small- 800" value=800></option>
+                    </select>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="orders" id="order">
-            <form>
-                <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-                <div class="form-group row">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-8 order-overlay text-center">
-                        <form class="col-sm-6 offset-sm-3 text-center">
-                            <label>Pick your pizza Flavour:</label>
-                            <select class="custom-select custom-select-md mb-3" id="flavour" required>
-                                <option value="hawaiian">Hawaiian</option>
-                                <option value="bbq">BBQ Steak</option>
-                                <option value="peperoni">Peperoni Chicken</option>
-                                <option value="chickentikka">Chicken Tikka</option>
-                            </select>
-                            
-                            <label>Chose your preferred Size:</label>
-                            <select class="custom-select custom-select-md mb-3" id="size" required>
-                                <option value="small">Small @500 Kshs</option>
-                                <option value="medium">Medium @750 Kshs</option>
-                                <option value="large">Large @1000 Kshs</option>
-                            </select>
-                            <label for="crust">Choose your favorite Crust:</label>
-                            <select class="custom-select custom-select-md mb-3" id="crust" required>
-                                <option value="crispy">Crispy @100 kshs </option>
-                                <option value="stuffed">Stuffed @120 Kshs </option>
-                                <option value="flatbread">FlatBread Crust @90 Kshs </option>
-                                <option value="gluten">Gluten-free @140 Kshs</option>
-                            </select>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="pizzaCrust">Select Crust</label>
+                    <select class="crust form-control" id="pizzaCrust">
+                      <option label="Chicago -700" value="700"></option>
+                      <option label="Neopoletan -650" value="650"></option>
+                      <option label="Deep-fish- 450" value="450"></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <label for="pizzaTopping">Select Toppings @shs 80</label><br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="topping" value=0>
+                <label class="form-check-label" for="topping">Pepperoni</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="topping" value=1>
+                <label class="form-check-label" for="topping">Onions</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="topping" value=2>
+                <label class="form-check-label" for="topping">Sausage</label>
+                <button type="submit" class="btn btn-outline-info" id="carty">Add to Cart</button>
+              </div>
 
-                            <label>Choose Your favourite Toppings</label>
-                            <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                                <option value="mushroom">Mushroom @30 Kshs </option>
-                                <option value="onions">Onions @5 Kshs</option>
-                                <option value="tomato">Tomato @10 Kshs</option>
-                                <option value="greenpepper">Green Pepper @15 Kshs</option>
-                                <option value="olives">Olives @20 Kshs</option>
-                               
-                            </select>
 
-                            <label for="number">Number of Pizza's</label>
-                            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
-                                required>
-                        </form>
-
-                        <br>
-                        
-                            <button type="button" class="btn btn-success checkout" id="checkout"> 
-                                Checkout
-                            </button>
-                        </a>
-
-                    </div>
             </form>
-            <div class="col-sm-2"></div>
-        </div>
-    </div>
-    <div classes="order-summary" id="sum-order">
-        <h1 class="text-center" id="summary">Order Summary </h1>
-        <h2 class="text-center summary">Your order:</h2>
-        <ol id="list" class="text-center sum">
-        </ol>
-        <div class="clientdata">
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <form action="" class="form-group col-sm-6 data">
-                    <input type="text" class="form-control clientdata" id="name" placeholder="Enter your Name:" required>
-                    <input type="number" class="form-control clientdata" id="phonenumber" placeholder="Enter your phone number:" required>
-                    <input type="text" class="form-control clientdata" id= "lacation" placeholder="Enter your location" required>
-                    <button class="text" class="btn bg-info" id="go"> Request Delivery</button> <br>
-                    <button class='delivernot' id="do">Pick up</button>
+            <div>
+
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#cartPizza"
+                id="viewCart">View
+                Cart</button>
             </div>
+          </div>
         </div>
-
+      </div>
     </div>
+  </div>
 
+  <!-- Cart -->
+  <div class="modal fade" id="cartPizza" tabindex="-1" role="dialog" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartTitle">Your Orders</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- location confirmation -->
+          <form action="">
+            <p>Should we deliver your orders right to your door step?</p>
+            <div class="form-inline">
+              <input type="radio" value="yes">Yes please
+              <input type="radio" value="no">No, I got this
+            </div>
+            <input type="text" id="location" class="form-control" placeholder="Enter delivery location">
+          </form>
+
+          <!-- table of orders -->
+          <div id="table">
+            <table style="width:100%" class="pt-5">
+
+              <tr>
+                <th>Size</th>
+                <th>Crust</th>
+                <th>Toppings</th>
+                <th>Total</th>
+
+              </tr>
+            </table>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-outline-info" data-dismiss="modal" id="addMore">Order More</button>
+          <button type="button" class="btn btn-outline-primary" id="checkout">Checkout</button>
+        </div>
+      </div>
     </div>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
+  </div>
+  <!-- home -->
+  <div class="container-fluid">
+    <div class="home">
+      <div class="row" id="mhome">
+        <div class="col-md-6">
+          <h1>Artista PIZZA HUB</h1>
+          <h3 id="welcome" class="p-3">
+            Want some delicious Pizza? Then, Pizza hub got you covered!.We are just one call
+            away!
+          </h3>
+          <button id="placeOrder" class="btn btn-outline-info" data-toggle="modal" data-target="#orderPizza">Place your
+            order
+            now!</button>
+        </div>
+      </div>
+    </div>
+    <!-- about us -->
+    <div id="we" class="pt-5">
+      <h1 class="text-info">About us</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/piz1.png" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+          <p class="text-justify">We are a team that is dedicated to excellence in terms of quality of our Pizzas.<br>
+            We value our customers
+            and we are always there to ensure that we give our best and maintain a good reputation to the outside world.
+            After just one bite, you’ll surely love our products.</p>
+        </div>
+      </div>
+    </div>
+    <!-- menu -->
+    <div class="container-fluid">
+      <h1 class="text-info">A Taste of delicacies</h1>
+      <div class="row pt-4">
+        <div class="col-md-3">
+          <div class="card text-center" id="pizza1">
+            <img src="images/pizza03.jpg" class="image-fluid">
+            <h2 class="pizza-heading text-center" id="pizza1-title">STROMBOLI</h2>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center" id="pizza2">
+            <img src="images/pizza04.jpg" class="image-fluid">
+            <h2 class="pizza-heading text-center" id="pizza2-title">NAPOLETANA</h2>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center" id="pizza3">
+            <img src="images/pizza07.jpg" class="image-fluid">
+            <h2 class="pizza-heading text-center" id="pizza3-title">MARINARA</h2>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center" id="pizza4">
+            <img src="images/pizza09.jpg" class="image-fluid">
+            <h2 class="pizza-heading text-center" id="pizza4-title">ITALIANA</h2>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="container-fluid pt-5 pl-0 pr-0">
+          <footer class="bg-primary p-4 text-white">
+            <h2>Contact us</h2>
+            <h3>Email</h3>
+            <p>artistapizzahub2019@gmail.com</p>
+            
+          </footer>
+        </div>
+      </div>
+      <script src="js/jquery-3.4.1.js"></script>
+      <script src="./js/script.js"></script>
+      <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
