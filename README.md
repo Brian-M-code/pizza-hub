@@ -13,6 +13,25 @@ A pizza ordering web application to demonstrate working with objects , construct
 *https://brian-m-code.github.io/pizza-hub/
 
 
+## BDD
+
+| Inputs.            | Description.                                            |
+|--------------------|---------------------------------------------------------|
+| Choose pizza size  | The user to input the century they were born            |
+|                    |                                                         |
+| choose crust       | The user to input the year they were born               |
+|                    |                                                         |
+| Choose toppings    | the user to input the month they were born              |
+|                    |                                                         |
+| click checkout     | The user to input the date of the day they were born    |
+|                                                                              |
+| Output             | Your order                                              |
+| click lorry        | to input your delivery location                         |
+
+
+![screenshot].(images/screen.png)
+
+
 
 ## Bugs Known
 
@@ -32,9 +51,12 @@ Currently no known bugs if any contact me .
 
 
 
+
 ## Support and contact details
 incase you are not able to view certain applications or parts of the website feel free to submit an email to mutuma.brian@yahoo.com
 
 ### License
-MIT
+
+[The MIT license](license.md)
+
 Copyright (c)2019 **Brian-M-Code.**
