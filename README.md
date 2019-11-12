@@ -1,6 +1,7 @@
-# Pizza App
-This is my fourth IP on a pizza  palace 
-#### By Brian Mutuma
+# Artista Pizza Hub App
+
+### Author By: Brian Mutuma
+
 ## Description
 A pizza ordering web application to demonstrate working with objects , constructors and prototypes 
 
@@ -15,13 +16,17 @@ A pizza ordering web application to demonstrate working with objects , construct
 
 ## Bugs Known
 
-The site had problems running some images moreso on the home images.
-A well known bug is on the effect of the nav bar as you scroll down the page.
-## Technologies/Languages Used
-html-create and develop the actual webpage content
-css and bootstrap - Extensively used inorder to customize and restyle the webpages as a whole.
-markdown - Extensively create a detailed readme
-Javascript and jQuery - Largely used for the interaction of the page with the user.
+Currently no known bugs if any contact me .
+
+## Technologies-Languages Used
+- html-create and develop the actual webpage content
+- css and bootstrap - Extensively used inorder to customize and restyle the webpages as a whole.
+- markdown - Extensively create a detailed readme
+- Javascript and jQuery - Largely used for the interaction of the page with the user.
+
+## Setup Instructions.
+
+
 ## Support and contact details
 incase you are not able to view certain applications or parts of the website feel free to submit an email to mutuma.brian@yahoo.com
 
