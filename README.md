@@ -25,6 +25,10 @@ Currently no known bugs if any contact me .
 - Javascript and jQuery - Largely used for the interaction of the page with the user.
 
 ## Setup Instructions.
+- git clone https://github.com/Brian-M-Code/pizza-hub.git
+- extract the file
+- cd to the pizza-hub directory
+- open the index.html on your favourite browser
 
 
 
