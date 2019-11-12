@@ -29,7 +29,6 @@ A pizza ordering web application to demonstrate working with objects , construct
 | click lorry        | to input your delivery location                         |
 
 
-![screenshot].(images/screen.png)
 
 
 
